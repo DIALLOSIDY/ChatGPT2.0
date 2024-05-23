@@ -1,7 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ChatGPT.MainPage">
+             x:Class="ChatGPT.MainPage"
+             Shell.BackgroundColor="#4EE681"
+             BackgroundColor="#E2E3E0">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="chat.png"/>
+    </ContentPage.ToolbarItems>
+
+
 
     <ScrollView>
         <VerticalStackLayout
@@ -22,14 +30,21 @@
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
-            <Entry Placeholder="votre question ..." x:Name="question"/>
+            <Frame  Margin="0,350,0,0">
+                <Entry FontSize="25" Placeholder="votre question ..." x:Name="question" 
+                       />
+
+            </Frame>
+
+           
 
             <Button
                 x:Name="SendBtn"
                 Text="Envoyer" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnSendClicked"
-                HorizontalOptions="Fill" />
+                HorizontalOptions="Fill"
+                Background="#45A7A9"/>
             
            
 			

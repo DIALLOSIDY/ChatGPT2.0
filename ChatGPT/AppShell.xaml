@@ -8,7 +8,7 @@
     Title="ChatGPT">
 
     <ShellContent
-        Title="Home"
+        Title="ChatBot"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
     
